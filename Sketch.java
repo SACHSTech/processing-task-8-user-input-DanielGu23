@@ -3,6 +3,8 @@ import processing.core.PImage;
 
 public class Sketch extends PApplet {
 	
+  
+  
   // Set global variables
 	PImage imgBird;
   float fltBirdX = 500;
