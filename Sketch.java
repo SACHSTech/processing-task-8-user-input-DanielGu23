@@ -19,7 +19,7 @@ public class Sketch extends PApplet {
    * @return nothing
    * 
    */
-  public void settings() {
+  public void settings(){
     size(1000, 1000);
   }
 
@@ -30,7 +30,7 @@ public class Sketch extends PApplet {
    * @return nothing
    * 
    */
-  public void setup() {
+  public void setup(){
     background(210, 255, 173);
     imgBird = loadImage("BIRD.png");
     imgBird.resize(width / 20, height / 20);
@@ -51,10 +51,10 @@ public class Sketch extends PApplet {
       else if (keyCode == DOWN){
         fltBirdY = fltBirdY + 5;
       } 
-      else if(keyCode == LEFT){
+      else if (keyCode == LEFT){
         fltBirdX = fltBirdX - 5;
       }
-      else if(keyCode == RIGHT){
+      else if (keyCode == RIGHT){
         fltBirdX = fltBirdX + 5; 
       }
     }
@@ -97,7 +97,7 @@ public class Sketch extends PApplet {
     
     // Draw central circle after petals to avoid overlap
     strokeWeight(1);
-    ellipse(0, 0, (float)(width / 20), (float) (height / 20));
+    ellipse(0, 0, (float)(width / 20), (float)(height / 20));
   }
 
 
@@ -143,16 +143,16 @@ public class Sketch extends PApplet {
    * 
    */
   public void keyPressed(){
-    if (key == 'w') {
+    if (key == 'w'){
       isUp = true;
     }
-    else if (key == 's') {
+    else if (key == 's'){
       isDown = true;
     }
-    else if (key == 'a') {
+    else if (key == 'a'){
       isLeft = true;
     }
-    else if (key == 'd') {
+    else if (key == 'd'){
       isRight = true;
     }
   }
@@ -164,17 +164,17 @@ public class Sketch extends PApplet {
    * @return nothing
    * 
    */
-  public void keyReleased() {
-    if (key == 'w') {
+  public void keyReleased(){
+    if (key == 'w'){
       isUp = false;
     }
-    else if (key == 's') {
+    else if (key == 's'){
       isDown = false;
     }
-    else if (key == 'a') {
+    else if (key == 'a'){
       isLeft = false;
     }
-    else if (key == 'd') {
+    else if (key == 'd'){
       isRight = false;
     }
   }
