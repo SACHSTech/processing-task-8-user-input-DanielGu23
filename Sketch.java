@@ -6,7 +6,7 @@ public class Sketch extends PApplet {
   
   
   // Set global variables
-	PImage imgBird;
+PImage imgBird;
   float fltBirdX = 500;
   float fltBirdY = 500;
   boolean isUp = false;
