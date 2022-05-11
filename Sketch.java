@@ -3,9 +3,14 @@ import processing.core.PImage;
 
 public class Sketch extends PApplet {
 
+  /**
+  * A program Sketch.java that draws a garden scenery based on various user inputs.
+  * Based on the w a s d keys, the user can move the image of a bird.
+  * @author: D. Gu
+  */
+
   // Set global variables
   PImage imgBird;
-  
   float fltBirdX = 500;
   float fltBirdY = 500;
   boolean isUp = false;
@@ -46,28 +51,36 @@ public class Sketch extends PApplet {
    */
   public void draw() {
     if (keyPressed){
+      // Moves the bird up if the key pressed is up
       if (keyCode == UP){
         fltBirdY = fltBirdY - 5;
       } 
+      // Moves the bird down if the key pressed is down
       else if (keyCode == DOWN){
         fltBirdY = fltBirdY + 5;
       } 
+      // Moves the bird left if the key pressed is left
       else if (keyCode == LEFT){
         fltBirdX = fltBirdX - 5;
       }
+      // Moves the bird right if the key pressed is right
       else if (keyCode == RIGHT){
         fltBirdX = fltBirdX + 5; 
       }
     }
+    // Moves the bird up if the key pressed is w
     if (isUp){
       fltBirdY = fltBirdY - 5;
     } 
+    // Moves the bird down if the key pressed is s
     if (isDown){
       fltBirdY = fltBirdY + 5;
     }
+    // Moves the bird left if the key pressed is a
     if (isLeft){
       fltBirdX = fltBirdX - 5;
     }
+    // Moves the bird right if the key pressed is d
     if (isRight){
       fltBirdX = fltBirdX + 5;
     }
